@@ -1,22 +1,22 @@
 #include <iostream>
 #define _USE_MATH_DEFINES // M_PI
 #include <cmath>
-#include Regularpolygon.h
+#include "Regularpolygon.h"
 
 
 int Regularpolygon::count = 0;
 
 int main() {
-    // Örnek kullaným
-    Regularpolygon square(4); // Kare oluþturduk
+    // Ã–rnek kullanÃ½m
+    Regularpolygon square(4); // Kare oluÅ£turduk
     double sideLength = 5.0;
     double area = square.area(sideLength);
-    std::cout << "Kare Alaný: " << area << std::endl;
+    std::cout << "Kare AlanÃ½: " << area << std::endl;
 
     double newSideLength = square.length(area);
-    std::cout << "Yeni Kenar Uzunluðu: " << newSideLength << std::endl;
+    std::cout << "Yeni Kenar UzunluÄ‘u: " << newSideLength << std::endl;
 
-    std::cout << "Toplam RegularPolygon Sayýsý: " << Regularpolygon::getCount() << std::endl;
+    std::cout << "Toplam RegularPolygon SayÃ½sÃ½: " << Regularpolygon::getCount() << std::endl;
 
     return 0;
 } 
