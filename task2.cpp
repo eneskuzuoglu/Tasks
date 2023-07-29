@@ -1,27 +1,22 @@
-
-
-
-
-
 #include <iostream>
 using namespace std;
 
 int main() {
     setlocale(LC_ALL, "Turkish");
-    int sayi;
-    
+    int number;
+        
     cout << "write your number  ";
-    cin >> sayi;
+    cin >> number;
 
-    if (sayi < 1 || sayi > 999) {
+    if (number < 1 || number > 999) {
         cout << "improper integer." << endl;
         return 1;
     }
 
     // hundreds digit
-    int yuzler = sayi / 100;
-    if (yuzler > 0) {
-        switch (yuzler) {
+    int hunderts = number / 100;
+    if (hunderts > 0) {
+        switch (hunderts) {
         case 1:
             cout << "yüz";
             break;
@@ -53,12 +48,12 @@ int main() {
     }
 
     
-    int onlar = (sayi / 10) % 10;
-    int birler = sayi % 10;
+    int tens = (number / 10) % 10;
+    int ones = number % 10;
 
-    if (onlar > 0 || birler > 0) {
+    if (tens > 0 || ones > 0) {
         // tenth digit 
-        switch (onlar) {
+        switch (tens) {
         case 0:
             break;
         case 1:
@@ -91,7 +86,7 @@ int main() {
         }
 
         // ones digit 
-        switch (birler) {
+        switch (ones) {
         case 0:
             break;
         case 1:
