@@ -26,7 +26,7 @@ int main()
 	Province istanbul = { "istanbul", &Turkey };
 	return 0;
 
-	std::cout << " the capital of the country that istanbul in: " << istanbul.country->capital << "." << std::endl;
+	//std::cout << " the capital of the country that istanbul in: " << istanbul.country->capital << "." << std::endl;
 }
 
 
